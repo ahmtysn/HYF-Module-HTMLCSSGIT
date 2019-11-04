@@ -1,0 +1,41 @@
+1)How do I create a hidden file or folder? How do I display it in the CLI?
+
+Firstly I can create with these commands;
+	$ touch .filename
+	$ mkdir .foldername
+For Display;
+	ls -a (I can see all files and folder with hidden ones)
+For Contents;
+	$ cat .filename
+	$ more .filename
+	$ nano .filename (editing file, for save ctrl+O, for exit ctrl+x)
+
+2)How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+	
+	$ mkdir -p c/Users/myusername/these/folders/are/just/for/fun? (-p:'parents)
+
+3)How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+	$ echo 'first message
+	  second message' >> filename (use shift + enter) ( >> for append, > for add, you can use both of them) 
+
+	$ cat >> greetings.txt << EOL	(use shift + enter)
+	  first message
+	  second message
+	  EOL
+
+4)Dear class, for command line, there is an additional homework (thanks to @Ramzi). Here it goes.
+Write a sequence of commands to make four groups of students. 
+Each group should contain four students. One student cannot be part of multiple groups.
+
+	names.txt is consist of 16 names...
+
+	$ sed -n '1,4p' names.txt > group1.txt
+	$ sed -n '5,8p' names.txt > group2.txt
+	$ sed -n '9,12p' names.txt > group3.txt
+	$ sed -n '13,16p' names.txt > group4.txt
+
+
+
