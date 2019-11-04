@@ -32,6 +32,7 @@ Each group should contain four students. One student cannot be part of multiple 
 
 	names.txt is consist of 16 names...
 
+	$ shuf names.txt -o names.txt 			(firstly i make this command and i can randomize all list at the beginner)
 	$ sed -n '1,4p' names.txt > group1.txt
 	$ sed -n '5,8p' names.txt > group2.txt
 	$ sed -n '9,12p' names.txt > group3.txt
