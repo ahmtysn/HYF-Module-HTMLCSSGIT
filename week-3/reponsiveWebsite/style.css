@@ -13,6 +13,9 @@ body {
 .logo img {
   margin-left: 250px;
 }
+.switch {
+  display: inline;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -340,12 +343,8 @@ footer p:first-child {
   .btn {
     display: inline;
   }
-
   .navbar .list ul {
     display: none;
-  }
-  .switch {
-    display: inline;
   }
   .navbar .switch ul li {
     margin: 1.5px;
@@ -392,12 +391,8 @@ footer p:first-child {
   .btn {
     display: inline;
   }
-
   .navbar .list ul {
     display: none;
-  }
-  .switch {
-    display: inline;
   }
   .navbar .switch ul li {
     margin: 1.5px;
@@ -428,5 +423,15 @@ footer p:first-child {
   }
   .tag {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar .switch ul {
+    display: flex;
+  }
+  .navbar .switch ul li {
+    font-size: 18px;
+    margin: auto 25px;
   }
 }
