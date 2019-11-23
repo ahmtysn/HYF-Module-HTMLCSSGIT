@@ -16,15 +16,20 @@
         <img src="./images/logo-ro.svg" alt="rijksoverheid logo" />
       </div>
       <div class="navbar">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Actueel</a></li>
-          <li><a href="">Onderwerpen</a></li>
-          <li><a href="">Ministeries</a></li>
-          <li><a href="">Regering</a></li>
-          <li><a href="">Documenten</a></li>
-          <li><a href="">Doe mee</a></li>
-        </ul>
+        <div class="lone">Home</div>
+        <div>
+          <button class="btn">Menu</button>
+          <div id="list" class="list">
+            <ul>
+              <li><a href="">Actueel</a></li>
+              <li><a href="">Onderwerpen</a></li>
+              <li><a href="">Ministeries</a></li>
+              <li><a href="">Regering</a></li>
+              <li><a href="">Documenten</a></li>
+              <li><a href="">Doemee</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="home">
         <div class="parts">
@@ -184,7 +189,8 @@
                 <h3>PFAS</h3>
                 <p>
                   Lees de vragen enantwoorden over PFASop de website van de
-                  RIVM.
+                  RIVM. Bij de Helpdesk Stikstof van BIJ12. <br />
+                  Ahmet Yasin
                 </p>
               </a>
             </li>
@@ -356,5 +362,13 @@
       <p><a href="">Papiamentu</a></p>
       <p><a href="">Nederlandse Geberentaal</a></p>
     </footer>
+    <script>
+      let btn = document.querySelector("button");
+      let nav = document.getElementById("list");
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("switch");
+        nav.classList.toggle("list");
+      });
+    </script>
   </body>
 </html>
